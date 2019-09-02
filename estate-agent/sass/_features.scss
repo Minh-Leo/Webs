@@ -1,0 +1,34 @@
+.features {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); //Make grid auto change number columns when resize screen and auto to content -> no mediaQuery
+    grid-gap: 6rem;
+    align-items: start;
+
+}
+
+
+.feature {
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 2.5rem;
+    
+    
+    &_icon {
+        grid-row: 1 / 3;
+        fill: $color-primary;
+        width: 4.5rem;
+        height: 4.5rem;
+        transform: translateY(-1rem);
+    }
+
+    &_text {
+        font-size: 1.7rem;
+    }
+
+}
