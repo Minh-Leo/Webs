@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%; // 1rem = 10px
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px
+    }
+    
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    // font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 3rem;
+    box-sizing: border-box;
+
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem = 9px
+        padding: 0;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px
+    }
+    
+}
+
+
