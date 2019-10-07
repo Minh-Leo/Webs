@@ -757,6 +757,10 @@ footer {
     width: 300px;
     height: 150px;
   }
+
+  .section-mag .insta {
+    width: 300px;
+  }
   .section-contact {
     max-width: 300px;
     margin-left: auto;
