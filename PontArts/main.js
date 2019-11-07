@@ -94,3 +94,20 @@ $(".menu a, .top-bar #back-home a").on("click", function(e) {
     );
   }
 });
+
+// BoxSlider
+$(".boxSlider-tab-list-item").click(function() {
+  if ($(this).hasClass("active")) {
+    return;
+  }
+  $(".active").removeClass("active");
+  $(this).addClass("active");
+  var index = $(this).index();
+  var itemContent = $(".boxSlider-content[data-index=" + index + "]");
+  $(".boxSlider-body-slide").animate(
+    {
+      left: 0 - itemContent.position().left
+    },
+    500
+  );
+});

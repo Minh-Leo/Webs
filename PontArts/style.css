@@ -469,6 +469,66 @@ button#prev {
 }
 
 /* --------------------------------------------------- */
+/* Bridal */
+.section-bridal {
+  max-width: 1024px;
+  height: 400px;
+  /* border: 1px solid #333; */
+  /* padding: 0 15px; */
+}
+
+.boxSlider-tab-list {
+  display: flex;
+  flex-direction: row;
+}
+.boxSlider-tab-list-item {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #bfc0c0;
+  border-radius: 3px 3px 0 0;
+  margin: 0 5px;
+  padding: 5px 0;
+  background-color: #bfc0c0;
+}
+
+.boxSlider-tab-list-item:hover {
+  background-color: #ffbb00;
+}
+.active,
+.active:hover {
+  background-color: #fff;
+  border-bottom: none;
+}
+.boxSlider-body {
+  overflow: hidden;
+}
+
+.boxSlider-body-slide {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0px;
+}
+.boxSlider-content {
+  min-width: 100%;
+  height: 300px;
+  border: 1px solid #bfc0c0;
+  border-radius: 3px;
+  margin-top: -1px;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  /* background-color: red; */
+}
+.boxSlider-content-detail {
+  width: 60%;
+}
+.boxSlider-content-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* --------------------------------------------------- */
 /* E-Mag */
 .section-mag {
   display: grid;
